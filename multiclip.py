@@ -1,6 +1,9 @@
 import pyperclip
 import keyboard
 import time
+from os import system
+
+system("title " + "multiclip")
 
 secondary_clipboards = ["", "", "", "", "", "", "", "", "", "", "", ""]
 print("Ctrl+Shift+F1 to 12 to store")

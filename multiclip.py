@@ -3,6 +3,8 @@ import keyboard
 import time
 
 secondary_clipboards = ["", "", "", "", "", "", "", "", "", "", "", ""]
+print("Ctrl+Shift+F1 to 12 to store")
+print("Ctrl+Win+F1 to 12 to retrieve")
 
 def copy(index):
     global secondary_clipboards

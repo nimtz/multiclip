@@ -20,9 +20,12 @@ def copy(index):
 
 def paste(index):
     global secondary_clipboards
+    tmptext = pyperclip.paste()
     pyperclip.copy(secondary_clipboards[index - 1])
     keyboard.release('windows')
     keyboard.press_and_release('v')
+    time.sleep(0.01)
+    pyperclip.copy(tmptext)
         
 def register_hotkeys():
     for i in range(1, 13):
